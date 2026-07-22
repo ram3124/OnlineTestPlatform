@@ -6,7 +6,7 @@ An advanced **MERN-based Online Test Platform** that enables administrators to c
 
 ## 🌐 Live Demo
 
-🔗 **Application:** https://onilnetest.netlify.app/
+🔗 **Application:**https://online-test-platform-woad.vercel.app/
 
 ---
 

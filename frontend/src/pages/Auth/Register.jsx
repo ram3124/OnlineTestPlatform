@@ -184,7 +184,7 @@ export default function Register() {
       );
 
       const decoded = JSON.parse(atob(res.data.token.split('.')[1]));
-      login(res.data.token, decoded.role);
+      login(res.data.token, decoded.role, res.data.user);
 
       if (decoded.role === "admin") navigate("/admin/create");
       else navigate("/join");

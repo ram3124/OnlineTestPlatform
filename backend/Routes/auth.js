@@ -25,7 +25,7 @@ router.post('/register',upload.single('file'), async (req, res) => {
     await user.save();
 
     const token = jwt.sign({ id: user._id, email, role: user.role }, process.env.JWT_SECRET, { expiresIn: '2d' });
-    res.status(201).json({ token });
+    res.status(201).json({ token, user });
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
